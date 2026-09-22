@@ -1,0 +1,26 @@
+[
+    {
+        "src_ip": "192.168.1.2",
+        "dst_ip": "192.168.1.4",
+        "proto": "icmp",
+        "src_port": "*",
+        "dst_port": "*",
+        "action": "deny"
+    },
+    {
+        "src_ip": "192.168.1.2",
+        "dst_ip": "192.168.1.3",
+        "proto": "tcp",
+        "src_port": "*",
+        "dst_port": "80",
+        "action": "deny"
+    },
+    {
+        "src_ip": "*",
+        "dst_ip": "192.168.1.4",
+        "proto": "udp",
+        "src_port": "*",
+        "dst_port": "9999",
+        "action": "deny"
+    }
+]
